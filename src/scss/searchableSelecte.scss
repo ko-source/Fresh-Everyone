@@ -1,0 +1,32 @@
+.itemList {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  padding: 5px;
+  max-height: 40vh;
+  list-style: none;
+  z-index: 1030;
+  overflow: auto;
+  border: 1px solid gainsboro;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  li {
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: gainsboro;
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: transparent;
+}
